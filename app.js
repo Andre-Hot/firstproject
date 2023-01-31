@@ -1,6 +1,10 @@
 document.body.innerHTML +="Hello JavaScript!";
-document.body.innerHTML ="Hello JavaScript!";
 //alert("Hello Dat.js");
 console.log("Hello Dat.js");
 console.log("Hi Students!");
 console.log("This is your first JavaScript App");
+function sayhello() {
+ document.querySelector("h3").textContent="Hej " + document.querySelector("input").value;
+ 
+}
+document.querySelector("button").addEventListener("click", sayhello);
